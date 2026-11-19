@@ -1,0 +1,27 @@
+2026-11-18 22:00:43,050 | INFO | Cliente registrado correctamente: Cliente #1: Efraín Castellares (doc. 1012345678, efrain@correo.com)
+2026-11-18 22:00:43,051 | DEBUG | Intento de registro de cliente finalizado.
+2026-11-18 22:00:43,051 | INFO | Cliente registrado correctamente: Cliente #2: Laura Gómez (doc. 52123456, laura@correo.com)
+2026-11-18 22:00:43,051 | DEBUG | Intento de registro de cliente finalizado.
+2026-11-18 22:00:43,052 | ERROR | No se pudo registrar el cliente: Correo inválido: 'pedro-correo'.
+2026-11-18 22:00:43,052 | DEBUG | Intento de registro de cliente finalizado.
+2026-11-18 22:00:43,052 | ERROR | [CLIENTE_INVALIDO] Correo inválido: 'pedro-correo'.
+2026-11-18 22:00:43,052 | ERROR | No se pudo registrar el cliente: El documento debe ser numérico: 'ABC123'.
+2026-11-18 22:00:43,053 | DEBUG | Intento de registro de cliente finalizado.
+2026-11-18 22:00:43,053 | ERROR | [CLIENTE_INVALIDO] El documento debe ser numérico: 'ABC123'.
+2026-11-18 22:00:43,053 | ERROR |    causa original: ValueError("invalid literal for int() with base 10: 'ABC123'")
+2026-11-18 22:00:43,054 | ERROR | [SERVICIO_INVALIDO] Tarifa inválida: '-100'.
+2026-11-18 22:00:43,055 | ERROR | [ERROR INESPERADO] TypeError: Can't instantiate abstract class Servicio without an implementation for abstract methods 'calcular_costo', 'describir', 'validar_parametros'
+2026-11-18 22:00:43,056 | INFO | Reserva #9 confirmada. Costo con IVA: $178,500
+2026-11-18 22:00:43,056 | DEBUG | Intento de confirmación de la reserva #9 finalizado.
+2026-11-18 22:00:43,057 | INFO | Reserva #10 confirmada. Costo con IVA: $187,425
+2026-11-18 22:00:43,057 | DEBUG | Intento de confirmación de la reserva #10 finalizado.
+2026-11-18 22:00:43,057 | ERROR | [RESERVA_ERROR] Parámetros de reserva inválidos: Las horas de sala deben estar entre 1 y 12: '20'.
+2026-11-18 22:00:43,058 | ERROR |    causa original: ServicioInvalidoError("Las horas de sala deben estar entre 1 y 12: '20'.")
+2026-11-18 22:00:43,058 | ERROR | [RESERVA_ERROR] La reserva necesita un cliente válido.
+2026-11-18 22:00:43,058 | INFO | Reserva #9 procesada.
+2026-11-18 22:00:43,058 | ERROR | [RESERVA_ERROR] No se puede cancelar una reserva en estado 'procesada'.
+2026-11-18 22:00:43,059 | ERROR | Reserva #13 no confirmada: El servicio 'Redes Cisco' no está disponible.
+2026-11-18 22:00:43,059 | DEBUG | Intento de confirmación de la reserva #13 finalizado.
+2026-11-18 22:00:43,059 | ERROR | [RESERVA_ERROR] No se pudo confirmar la reserva #13: El servicio 'Redes Cisco' no está disponible.
+2026-11-18 22:00:43,059 | ERROR |    causa original: ServicioNoDisponibleError("El servicio 'Redes Cisco' no está disponible.")
+2026-11-18 22:00:43,060 | INFO | Reserva #13 cancelada.
